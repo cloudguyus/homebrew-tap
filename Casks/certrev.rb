@@ -7,13 +7,13 @@ cask "certrev" do
   desc "Inspect X.509 certificates without importing them into Keychain"
   homepage "https://github.com/cloudguyus/MacOSCertRev"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "CertRev.app"
 
   postflight_steps do
     run "/usr/bin/xattr",
-        args: ["-dr", "com.apple.quarantine", "{{appdir}}/CertRev.app"],
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/CertRev.app"],
         must_succeed: false
   end
 
