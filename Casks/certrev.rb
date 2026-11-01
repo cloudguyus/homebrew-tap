@@ -1,6 +1,6 @@
 cask "certrev" do
-  version "1.0.0"
-  sha256 "dd974d039e807377dde7960852bad3d38ada9b04aba1fc7f0922f60b7d25158c"
+  version "1.0.1"
+  sha256 "9d8984990716ddb5abea4f16612fe15c0c8aa616843624088c5721a128306745"
 
   url "https://github.com/cloudguyus/MacOSCertRev/releases/download/v#{version}/CertRev-#{version}.zip"
   name "CertRev"
